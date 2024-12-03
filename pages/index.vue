@@ -121,7 +121,8 @@ const prefillDemoData = () => {
 };
 
 const publish = () => {
-  const url = `${window.location.origin}/1?data=${encodeData(data.value)}`;
+  // const url = `${window.location.origin}/1?data=${encodeData(data.value)}`;
+  const url = `${window.location.origin}/onelink/1?data=${encodeData(data.value)}`;
   navigator.clipboard.writeText(url).then(() => {
     alert("Link copied to clipboard");
   });
