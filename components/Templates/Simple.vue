@@ -70,7 +70,7 @@
       </span>
       <span v-if="acc.test" class="p-1">
         <a :href="acc.test" target="_blank" rel="noopener | noreferrer">
-          <icon name="ph:linkedin-logo-duotone" class="h-6 w-6" />
+          <icon name="ion:social-octocat" class="h-6 w-6" />
         </a>
       </span>
     </div>
