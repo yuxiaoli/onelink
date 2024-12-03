@@ -18,6 +18,7 @@
           v-model:email="data.e"
           v-model:whatsapp="data.w"
           v-model:youtube="data.y"
+          v-model:test="data.test"
         />
         <app-form-hr />
         <app-form-links v-model="data.ls" />
@@ -73,6 +74,7 @@ const data = ref({
   e: "",
   w: "",
   y: "",
+  test: "",
   ls: [],
 });
 

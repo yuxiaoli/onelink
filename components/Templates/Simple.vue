@@ -68,6 +68,11 @@
           <icon name="ph:linkedin-logo-duotone" class="h-6 w-6" />
         </a>
       </span>
+      <span v-if="acc.test" class="p-1">
+        <a :href="acc.test" target="_blank" rel="noopener | noreferrer">
+          <icon name="ph:linkedin-logo-duotone" class="h-6 w-6" />
+        </a>
+      </span>
     </div>
     <ul class="space-y-2">
       <ExternalLink
@@ -99,7 +104,9 @@ const allSocialLinksAreEmpty = computed(() => {
     !props.acc.y &&
     !props.acc.e &&
     !props.acc.gh &&
-    !props.acc.l
+    // !props.acc.l
+    !props.acc.l &&
+    !props.acc.test
   );
 });
 </script>

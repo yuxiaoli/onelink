@@ -209,5 +209,6 @@ const props = defineProps([
   "whatsapp",
   "youtube",
   "email",
+  "test",
 ]);
 </script>
