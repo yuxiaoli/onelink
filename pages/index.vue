@@ -38,7 +38,7 @@
           <icon name="ph:paper-plane-tilt-bold" class="h-4 w-4" />
         </button>
         <a
-          href="https://github.com/fayazara/onelink"
+          href="https://github.com/yuxiaoli/onelink"
           target="_blank"
           class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
         >
@@ -48,13 +48,13 @@
       </div>
     </div>
     <app-form-preview :data="data" />
-    <a
+    <!-- <a
       href="https://twitter.com/fayazara"
       target="_blank"
       class="absolute bottom-0 right-0 bg-white rounded-tl-lg shadow px-4 py-1 font-medium text-sm text-gray-500"
-    >
-      Made by Fayaz
-    </a>
+    > -->
+      Made with ♥️
+    <!-- </a> -->
   </div>
 </template>
 
