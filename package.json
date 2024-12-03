@@ -5,7 +5,8 @@
     "dev": "nuxt dev --port 3001",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "touch .output/public/.nojekyll && gh-pages -d .output/public"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
@@ -13,13 +14,14 @@
     "@tailwindcss/forms": "^0.5.3",
     "@vueuse/core": "^9.12.0",
     "@vueuse/nuxt": "^9.12.0",
+    "gh-pages": "^6.2.0",
     "nuxt": "^3.1.1",
     "nuxt-icon": "^0.2.10"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.8",
     "floating-vue": "^2.0.0-beta.20",
-    "js-base64": "^3.7.4",
+    "js-base64": "^3.7.7",
     "vuedraggable": "^4.1.0"
   }
 }
