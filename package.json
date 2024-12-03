@@ -3,10 +3,10 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --port 3001",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate && touch .output/public/.nojekyll",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "touch .output/public/.nojekyll && gh-pages -d .output/public"
+    "deploy": "gh-pages -d .output/public"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
