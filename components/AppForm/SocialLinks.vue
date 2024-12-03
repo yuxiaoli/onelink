@@ -195,7 +195,7 @@
           </div>
         </div>
 
-        <div>
+        <!-- <div>
           <label for="test" class="block text-sm font-medium text-gray-700"
             >Test</label
           >
@@ -215,6 +215,177 @@
               placeholder="https://hello.com"
             />
           </div>
+        </div> -->
+        <div>
+          <label for="tiktok" class="block text-sm font-medium text-gray-700"
+            >TikTok</label
+          >
+          <div class="mt-1 flex rounded-md shadow-sm">
+            <span
+              class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-sm text-gray-500"
+            >
+              <icon name="ic:baseline-tiktok" class="w-5 h-5" />
+            </span>
+            <input
+              type="search"
+              name="tiktok"
+              id="tiktok"
+              :value="tiktok"
+              @input="$emit('update:tiktok', $event.target.value)"
+              class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              placeholder="https://tiktok.com/elonmusk"
+            />
+          </div>
+        </div>
+        <div>
+          <label for="douyin" class="block text-sm font-medium text-gray-700"
+            >抖音</label
+          >
+          <div class="mt-1 flex rounded-md shadow-sm">
+            <span
+              class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-sm text-gray-500"
+            >
+              <icon name="ic:baseline-tiktok" class="w-5 h-5" />
+            </span>
+            <input
+              type="search"
+              name="douyin"
+              id="douyin"
+              :value="douyin"
+              @input="$emit('update:douyin', $event.target.value)"
+              class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              placeholder="https://douyin.com/elonmusk"
+            />
+          </div>
+        </div>
+        <div>
+          <label for="wechat" class="block text-sm font-medium text-gray-700"
+            >微信</label
+          >
+          <div class="mt-1 flex rounded-md shadow-sm">
+            <span
+              class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-sm text-gray-500"
+            >
+              <!-- <icon name="tdesign:logo-wechat-stroke" class="w-5 h-5" /> -->
+              <icon name="ic:baseline-wechat" class="w-5 h-5" />
+            </span>
+            <input
+              type="search"
+              name="wechat"
+              id="wechat"
+              :value="wechat"
+              @input="$emit('update:wechat', $event.target.value)"
+              class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              placeholder="https://wechat.com/elonmusk"
+            />
+          </div>
+        </div>
+        <div>
+          <label for="wechat_oap" class="block text-sm font-medium text-gray-700"
+            >微信公众号</label
+          >
+          <div class="mt-1 flex rounded-md shadow-sm">
+            <span
+              class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-sm text-gray-500"
+            >
+              <!-- <icon name="mingcute:wechat-miniprogram-fill" class="w-5 h-5" /> -->
+              <icon name="mingcute:wechat-miniprogram-line" class="w-5 h-5" />
+            </span>
+            <input
+              type="search"
+              name="wechat_oap"
+              id="wechat_oap"
+              :value="wechat_oap"
+              @input="$emit('update:wechat_oap', $event.target.value)"
+              class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              placeholder="https://mp.weixin.qq.com/elonmusk"
+            />
+          </div>
+        </div>
+        <div>
+          <label for="wechat_channels" class="block text-sm font-medium text-gray-700"
+            >微信视频号</label
+          >
+          <div class="mt-1 flex rounded-md shadow-sm">
+            <span
+              class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-sm text-gray-500"
+            >
+              <!-- <icon name="ri:wechat-channels-fill" class="w-5 h-5" /> -->
+              <icon name="ri:wechat-channels-line" class="w-5 h-5" />
+            </span>
+            <input
+              type="search"
+              name="wechat_channels"
+              id="wechat_channels"
+              :value="wechat_channels"
+              @input="$emit('update:wechat_channels', $event.target.value)"
+              class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              placeholder="https://channels.weixin.qq.com/elonmusk"
+            />
+          </div>
+        </div>
+        <div>
+          <label for="xiaohongshu" class="block text-sm font-medium text-gray-700"
+            >小红书</label
+          >
+          <div class="mt-1 flex rounded-md shadow-sm">
+            <span
+              class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-sm text-gray-500"
+            >
+              <icon name="arcticons:xhs" class="w-5 h-5" />
+            </span>
+            <input
+              type="search"
+              name="xiaohongshu"
+              id="xiaohongshu"
+              :value="xiaohongshu"
+              @input="$emit('update:xiaohongshu', $event.target.value)"
+              class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              placeholder="https://xiaohongshu.com/elonmusk"
+            />
+          </div>
+        </div>
+        <div>
+          <label for="bilibili" class="block text-sm font-medium text-gray-700"
+            >B站</label
+          >
+          <div class="mt-1 flex rounded-md shadow-sm">
+            <span
+              class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-sm text-gray-500"
+            >
+              <icon name="simple-icons:bilibili" class="w-5 h-5" />
+            </span>
+            <input
+              type="search"
+              name="bilibili"
+              id="bilibili"
+              :value="bilibili"
+              @input="$emit('update:bilibili', $event.target.value)"
+              class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              placeholder="https://bilibili.com/elonmusk"
+            />
+          </div>
+        </div>
+        <div>
+          <label for="kuaishou" class="block text-sm font-medium text-gray-700"
+            >快手</label
+          >
+          <div class="mt-1 flex rounded-md shadow-sm">
+            <span
+              class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-sm text-gray-500"
+            >
+              <icon name="simple-icons:kuaishou" class="w-5 h-5" />
+            </span>
+            <input
+              type="search"
+              name="kuaishou"
+              id="kuaishou"
+              :value="kuaishou"
+              @input="$emit('update:kuaishou', $event.target.value)"
+              class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              placeholder="https://kuaishou.com/elon-musk"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -231,6 +402,14 @@ const props = defineProps([
   "whatsapp",
   "youtube",
   "email",
-  "test",
+  // "test",
+  "tiktok",
+  "douyin",
+  "wechat",
+  "wechat_oap",
+  "wechat_channels",
+  "xiaohongshu",
+  "bilibili",
+  "kuaishou",
 ]);
 </script>

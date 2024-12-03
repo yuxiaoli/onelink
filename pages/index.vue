@@ -18,7 +18,14 @@
           v-model:email="data.e"
           v-model:whatsapp="data.w"
           v-model:youtube="data.y"
-          v-model:test="data.test"
+          v-model:tiktok="data.tk"
+          v-model:douyin="data.dy"
+          v-model:wechat="data.wc"
+          v-model:wechat_oap="data.wc_oap"
+          v-model:wechat_channels="data.wc_ch"
+          v-model:xiaohongshu="data.xhs"
+          v-model:bilibili="data.bili"
+          v-model:kuaishou="data.ks"
         />
         <app-form-hr />
         <app-form-links v-model="data.ls" />
@@ -74,7 +81,15 @@ const data = ref({
   e: "",
   w: "",
   y: "",
-  test: "",
+  // test: "",
+  tk: "",
+  dy: "",
+  wc: "",
+  wc_oap: "",
+  wc_ch: "",
+  xhs: "",
+  bili: "",
+  ks: "",
   ls: [],
 });
 

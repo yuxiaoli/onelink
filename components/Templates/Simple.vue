@@ -68,9 +68,52 @@
           <icon name="ph:linkedin-logo-duotone" class="h-6 w-6" />
         </a>
       </span>
-      <span v-if="acc.test" class="p-1">
+      <!-- <span v-if="acc.test" class="p-1">
         <a :href="acc.test" target="_blank" rel="noopener | noreferrer">
           <icon name="ion:social-octocat" class="h-6 w-6" />
+        </a>
+      </span> -->
+      <span v-if="acc.tk" class="p-1">
+        <a :href="acc.tk" target="_blank" rel="noopener | noreferrer">
+          <icon name="ic:baseline-tiktok" class="h-6 w-6" />
+        </a>
+      </span>
+      <span v-if="acc.dy" class="p-1">
+        <a :href="acc.dy" target="_blank" rel="noopener | noreferrer">
+          <icon name="ic:baseline-tiktok" class="h-6 w-6" />
+        </a>
+      </span>
+      <span v-if="acc.wc" class="p-1">
+        <a :href="acc.wc" target="_blank" rel="noopener | noreferrer">
+          <!-- <icon name="tdesign:logo-wechat-stroke" class="h-6 w-6" /> -->
+          <icon name="ic:baseline-wechat" class="h-6 w-6" />
+        </a>
+      </span>
+      <span v-if="acc.wc_oap" class="p-1">
+        <a :href="acc.wc_oap" target="_blank" rel="noopener | noreferrer">
+          <!-- <icon name="mingcute:wechat-miniprogram-fill" class="h-6 w-6" /> -->
+          <icon name="mingcute:wechat-miniprogram-line" class="h-6 w-6" />
+        </a>
+      </span>
+      <span v-if="acc.wc_ch" class="p-1">
+        <a :href="acc.wc_ch" target="_blank" rel="noopener | noreferrer">
+          <!-- <icon name="ri:wechat-channels-fill" class="h-6 w-6" /> -->
+          <icon name="ri:wechat-channels-line" class="h-6 w-6" />
+        </a>
+      </span>
+      <span v-if="acc.xhs" class="p-1">
+        <a :href="acc.xhs" target="_blank" rel="noopener | noreferrer">
+          <icon name="arcticons:xhs" class="h-6 w-6" />
+        </a>
+      </span>
+      <span v-if="acc.bili" class="p-1">
+        <a :href="acc.bili" target="_blank" rel="noopener | noreferrer">
+          <icon name="simple-icons:bilibili" class="h-6 w-6" />
+        </a>
+      </span>
+      <span v-if="acc.ks" class="p-1">
+        <a :href="acc.ks" target="_blank" rel="noopener | noreferrer">
+          <icon name="simple-icons:kuaishou" class="h-6 w-6" />
         </a>
       </span>
     </div>
@@ -106,7 +149,15 @@ const allSocialLinksAreEmpty = computed(() => {
     !props.acc.gh &&
     // !props.acc.l
     !props.acc.l &&
-    !props.acc.test
+    // !props.acc.test
+    !props.acc.tk &&
+    !props.acc.dy &&
+    !props.acc.wc &&
+    !props.acc.wc_oap &&
+    !props.acc.wc_ch &&
+    !props.acc.xhs &&
+    !props.acc.bili &&
+    !props.acc.ks
   );
 });
 </script>
